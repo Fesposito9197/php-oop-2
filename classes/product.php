@@ -1,16 +1,16 @@
 <?php
 
 class Product {
-    public $categorie;
+    public $categories;
     public $name;
     public $type;
     public $price;
     public $image;
     
 
-    function __construct(array $categorie ,string $name, string $type , float $price , $image)
+    function __construct(array $categories ,string $name, string $type , float $price , $image)
     {
-        $this->categorie = $categorie;
+        $this->categories = $categories;
         $this->name = $name;
         $this->type = $type;
         $this->price = $price;
