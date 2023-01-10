@@ -8,7 +8,7 @@ class Product {
     public $image;
     
 
-    function __construct(object $categorie ,string $name, string $type , float $price , $image)
+    function __construct(array $categorie ,string $name, string $type , float $price , $image)
     {
         $this->categorie = $categorie;
         $this->name = $name;
