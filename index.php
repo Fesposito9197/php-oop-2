@@ -31,7 +31,7 @@ $products = [
         <ul>
             <?php foreach($products as $product) { ?>
             <li>
-                <?php foreach($product->categorie as $categorie) { ?>
+                <?php foreach($product->categories as $categorie) { ?>
                 <h3>Prodotto per: <?php echo ucfirst($categorie->name) ?>  </h3>
                 <?php } ?>
                 <ul>
