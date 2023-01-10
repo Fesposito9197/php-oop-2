@@ -2,13 +2,13 @@
 require_once __DIR__."/product.php";
 
 class Food extends Product{
-    public $type;
+    
     public $protein;
 
-    function __construct($categorie, $name, $price, $image, string $type, string $protein)
+    function __construct($categorie, $name, $type, $price, $image,  string $protein)
     {
-        parent::__construct($categorie, $name, $price, $image);
-        $this->type = $type;
+        parent::__construct($categorie, $name, $type, $price, $image);
+        
         $this->protein = $protein;
     }
 };
