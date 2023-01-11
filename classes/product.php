@@ -13,17 +13,19 @@ class Product {
         $this->categories = $categories;
         $this->name = $name;
         $this->type = $type;
-        $this->price = $price;
-        $this->image = $image;
-    }
-
-     
-    function correctprice($price){
-        if(!is_int($price)){
+        
+        if($price < 10){
+            
             throw new Exception("inserire un importo piu alto");
         }
-        return $this->$price;
+        
+        $this->price = $price;
+        
+        $this->image = $image;
     }
+    
+
+     
 
     
     

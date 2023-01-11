@@ -10,23 +10,27 @@ $dog = new Categorie("cane");
 $cat = new Categorie("gatto");
 
 
-$products_food = [
-    new Food([$dog],"felix","crocchette", 30, "product image", "carne rossa"),
-    new Food([$cat], "purina", "bocconcini", 40, "product image", "pesce"),
-];
-
-$products_kennels = [
-    new Kennels([$dog], "baldiflex", "cuccia in legno", 100, "product image", 120),
-    new Kennels([$cat], "pawhut", "cuccia di vimini", 110, "product image", 50 ),
-];
-
-$products_toy = [
-    new Toy([$dog],"trixie", "corda da gioco" , 80, "product image", "stoffa"),
-    new Toy([$cat],"dadypet","graffiatoio" ,60 ,"product image" , "plastica"),
-];
 
 
-var_dump($products_food);die;
+try{
+    $products_food = [
+        new Food([$dog],"felix","crocchette", 30, "product image", "carne rossa"),
+        new Food([$cat], "purina", "bocconcini", 40, "product image", "pesce"),
+    ];
+    
+    $products_kennels = [
+        new Kennels([$dog], "baldiflex", "cuccia in legno", 100, "product image", 120),
+        new Kennels([$cat], "pawhut", "cuccia di vimini", 110, "product image", 50 ),
+    ];
+    
+    $products_toy = [
+        new Toy([$dog],"trixie", "corda da gioco" , 80, "product image", "stoffa"),
+        new Toy([$cat],"dadypet","graffiatoio" ,60 ,"product image" , "plastica"),
+    ];
+}catch(Exception $e){
+    echo $e->getMessage();
+}
+
 
 
 ?>
