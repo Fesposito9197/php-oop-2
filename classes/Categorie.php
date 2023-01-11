@@ -1,7 +1,7 @@
 <?php 
+require_once __DIR__. "/../trait/GetName.php";
 class Categorie {
-    public $name;
-
+    use Name;
     function __construct($name){
         $this->name = $name;
     }

@@ -1,8 +1,8 @@
 <?php
-
+require_once __DIR__. "/../trait/GetName.php";
 class Product {
     public $categories;
-    public $name;
+    use Name;
     public $type;
     public $price;
     public $image;

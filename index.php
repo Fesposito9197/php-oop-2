@@ -24,9 +24,10 @@ $products_toy = [
     new Toy([$dog],"trixie", "corda da gioco" , 80, "product image", "stoffa"),
     new Toy([$cat],"dadypet","graffiatoio" ,60 ,"product image" , "plastica"),
 ];
-
-// var_dump($products);
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -86,9 +87,3 @@ $products_toy = [
         </ul>
     </body>
 </html>
-            
-            
-                
-                    
-                
-                    
