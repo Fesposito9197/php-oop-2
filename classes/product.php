@@ -8,7 +8,7 @@ class Product {
     public $image;
     
 
-    function __construct(array $categories ,string $name, string $type , float $price , $image)
+    function __construct(array $categories ,string $name, string $type , int $price , $image)
     {
         $this->categories = $categories;
         $this->name = $name;
@@ -16,4 +16,15 @@ class Product {
         $this->price = $price;
         $this->image = $image;
     }
+
+     
+    function correctprice($price){
+        if(!is_int($price)){
+            throw new Exception("inserire un importo piu alto");
+        }
+        return $this->$price;
+    }
+
+    
+    
 }

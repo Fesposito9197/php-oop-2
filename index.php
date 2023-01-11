@@ -11,8 +11,8 @@ $cat = new Categorie("gatto");
 
 
 $products_food = [
-    new Food([$dog],"felix","crocchette", 10, "product image", "carne rossa"),
-    new Food([$cat], "purina", "bocconcini", 7, "product image", "pesce"),
+    new Food([$dog],"felix","crocchette", 30, "product image", "carne rossa"),
+    new Food([$cat], "purina", "bocconcini", 40, "product image", "pesce"),
 ];
 
 $products_kennels = [
@@ -24,8 +24,12 @@ $products_toy = [
     new Toy([$dog],"trixie", "corda da gioco" , 80, "product image", "stoffa"),
     new Toy([$cat],"dadypet","graffiatoio" ,60 ,"product image" , "plastica"),
 ];
-?>
 
+
+var_dump($products_food);die;
+
+
+?>
 
 
 <!DOCTYPE html>
